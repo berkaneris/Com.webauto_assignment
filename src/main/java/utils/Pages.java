@@ -1,12 +1,10 @@
 package utils;
 
+import pages.autocomplete.AccentFolding_Page;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerts.AlertTypes_Page;
-import pages.draggable.AutoScrolling_Page;
-import pages.draggable.ConstrainMovement_Page;
-import pages.draggable.Draggable_DefFunc_Page;
-import pages.draggable.Handles_Page;
+import pages.draggable.*;
 import pages.droppable.Accept_Page;
 import pages.droppable.Droppable_DefFunc_Page;
 import pages.droppable.RevertDraggablePosition_Page;
@@ -20,6 +18,7 @@ import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Serialize_Page;
 
 public class Pages {
+    private AccentFolding_Page accentFoldingPage;
     private Accept_Page acceptPage;
     private AlertTypes_Page alertTypesPage;
 
@@ -32,6 +31,7 @@ public class Pages {
     private Draggable_DefFunc_Page draggableDefFuncPage;
 
     private Droppable_DefFunc_Page droppableDefFuncPage;
+    private Events_Page eventsPage;
 
     private Handles_Page handlesPage;
 
@@ -71,6 +71,8 @@ public class Pages {
         textareaPage = new Textarea_Page();
         serializePage = new Serialize_Page();
         normalIframePage = new NormalIframe_Page();
+        eventsPage = new Events_Page();
+        accentFoldingPage = new AccentFolding_Page();
 
     }
 
@@ -138,6 +140,12 @@ public class Pages {
     }
     public NormalIframe_Page getNormalIframePage(){
         return normalIframePage;
+    }
+    public Events_Page getEventsPage(){
+        return eventsPage;
+    }
+    public AccentFolding_Page getAccentFoldingPage(){
+        return accentFoldingPage;
     }
 
 }
