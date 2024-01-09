@@ -60,6 +60,15 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Normal Iframe")
     private WebElement normalIframeLink;
 
+    @FindBy(linkText = "Events")
+    private WebElement eventsLink;
+
+    @FindBy(linkText = "Autocomplete")
+    private WebElement autoCompleteLink;
+
+    @FindBy(linkText = "Accent Folding")
+    private WebElement accentFoldingLink;
+
     public void clickOnDraggableLink() {
         draggableLink.click();
     }
@@ -138,5 +147,14 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnNormalIframeLink(){
         normalIframeLink.click();
+    }
+    public void clickOnEventsLink(){
+        eventsLink.click();
+    }
+    public void clickOnAutoCompleteLink(){
+        autoCompleteLink.click();
+    }
+    public void clickOnAccentFoldingLink(){
+        accentFoldingLink.click();
     }
 }
