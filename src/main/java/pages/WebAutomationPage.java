@@ -69,6 +69,29 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
 
+    @FindBy(linkText = "Menu")
+    private WebElement menuLink;
+
+    @FindBy(linkText = "Icons")
+    private WebElement iconsLink;
+
+    @FindBy(linkText = "Progress Bar")
+    private WebElement progressBarLink;
+
+    @FindBy(linkText = "Download Dialog")
+    private WebElement downloadDialogLink;
+
+    @FindBy(linkText = "Datepicker")
+    private WebElement datePickerLink;
+
+    @FindBy(linkText = "Display Multiple Months")
+    private WebElement displayMultipleMonthsLink;
+
+    @FindBy(linkText = "Select Date Range")
+    private WebElement selectDateRangeLink;
+
+
+
     public void clickOnDraggableLink() {
         draggableLink.click();
     }
@@ -157,4 +180,29 @@ public class WebAutomationPage extends BasePage {
     public void clickOnAccentFoldingLink(){
         accentFoldingLink.click();
     }
+    public void clickOnMenuLink(){
+        menuLink.click();
+    }
+    public void clickOnIconLink(){
+        iconsLink.click();
+    }
+    public void clickOnProgressBarLink(){
+        progressBarLink.click();
+    }
+    public void clickOnDownloadDialogLink(){
+        downloadDialogLink.click();
+    }
+    public void clickOnDatePickerLink(){
+        datePickerLink.click();
+    }
+    public void clickOnDisplayMultipleMonthsLink(){
+        displayMultipleMonthsLink.click();
+    }
+    public void clickOnSelectDateRangeLink(){
+        selectDateRangeLink.click();
+    }
+
+
+
+
 }

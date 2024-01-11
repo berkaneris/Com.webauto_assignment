@@ -3,6 +3,7 @@ package draggableTests;
 import BaseTest.Hooks;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
