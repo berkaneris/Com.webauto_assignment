@@ -1,12 +1,15 @@
 package utils;
 
 import pages.Menu.Icons_Page;
+import pages.Spinner.SpinnerOverflow_Page;
 import pages.autocomplete.AccentFolding_Page;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerts.AlertTypes_Page;
+import pages.controlgroup.Toolbar_Page;
 import pages.datepicker.DisplayMultipleMonths_Page;
 import pages.datepicker.SelectDateRange_Page;
+import pages.dialog.ModalForm_Page;
 import pages.draggable.*;
 import pages.droppable.Accept_Page;
 import pages.droppable.Droppable_DefFunc_Page;
@@ -20,6 +23,7 @@ import pages.resizable.SynchronousResize_Page;
 import pages.resizable.Textarea_Page;
 import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Serialize_Page;
+import pages.slider.SnapToIncrements_Page;
 
 public class Pages {
     private AccentFolding_Page accentFoldingPage;
@@ -46,6 +50,8 @@ public class Pages {
     private HomePage homePage;
     private Icons_Page iconsPage;
 
+    private ModalForm_Page modalFormPage;
+
     private NestedIframe_Page nestedIframePage;
     private NormalIframe_Page normalIframePage;
 
@@ -57,10 +63,13 @@ public class Pages {
 
     private SelectDateRange_Page selectDateRangePage;
     private Serialize_Page serializePage;
+    private SnapToIncrements_Page snapToIncrementsPage;
+    private SpinnerOverflow_Page spinnerOverflowPage;
     private SynchronousResize_Page synchronousResizePage;
 
     private Textarea_Page textareaPage;
 
+    private Toolbar_Page toolbarPage;
 
     private WebAutomationPage webAutomationPage;
     public Pages() {
@@ -88,7 +97,10 @@ public class Pages {
         downloadDialogPage = new DownloadDialog_Page();
         displayMultipleMonthsPage = new DisplayMultipleMonths_Page();
         selectDateRangePage = new SelectDateRange_Page();
-
+        toolbarPage = new Toolbar_Page();
+        modalFormPage = new ModalForm_Page();
+        snapToIncrementsPage = new SnapToIncrements_Page();
+        spinnerOverflowPage = new SpinnerOverflow_Page();
     }
 
     public HomePage getHomePage() {
@@ -174,4 +186,17 @@ public class Pages {
     public SelectDateRange_Page getSelectDateRangePage(){
         return selectDateRangePage;
     }
+    public Toolbar_Page getToolbarPage(){
+        return toolbarPage;
+    }
+    public ModalForm_Page getModalFormPage(){
+        return modalFormPage;
+    }
+    public SnapToIncrements_Page getSnapToIncrementsPage(){
+        return snapToIncrementsPage;
+    }
+    public SpinnerOverflow_Page getSpinnerOverflowPage(){
+        return spinnerOverflowPage;
+    }
+
 }

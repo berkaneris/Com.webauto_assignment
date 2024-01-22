@@ -90,6 +90,30 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Select Date Range")
     private WebElement selectDateRangeLink;
 
+    @FindBy(linkText = "Control Group")
+    private WebElement controlGroupLink;
+
+    @FindBy(linkText = "Toolbar")
+    private WebElement toolbarLink;
+
+    @FindBy(linkText = "Dialog")
+    private WebElement dialogLink;
+
+    @FindBy(linkText = "Modal Form")
+    private WebElement modalFormLink;
+
+    @FindBy(linkText = "Slider")
+    private WebElement sliderLink;
+
+    @FindBy(linkText = "Snap to increments")
+    private WebElement snapToIncrementsLink;
+
+    @FindBy(linkText = "Spinner")
+    private WebElement spinnerLink;
+
+    @FindBy(linkText = "Spinner Overflow")
+    private WebElement spinnerOverflowLink;
+
 
 
     public void clickOnDraggableLink() {
@@ -202,7 +226,32 @@ public class WebAutomationPage extends BasePage {
         selectDateRangeLink.click();
     }
 
+    public void clickOnControlGroupLink(){
+        controlGroupLink.click();
+    }
+    public void clickOnToolbarLink(){
+        toolbarLink.click();
+    }
 
+    public void clickOnDialogLink(){
+        dialogLink.click();
+    }
+    public void clickOnModalFormLink(){
+        modalFormLink.click();
+    }
+
+    public void clickOnSliderLink(){
+        sliderLink.click();
+    }
+    public void clickOnSnapToIncrementsLink(){
+        snapToIncrementsLink.click();
+    }
+    public void clickOnSpinnerLink(){
+        spinnerLink.click();
+    }
+    public void clickOnSpinnerOverFlowLink(){
+        spinnerOverflowLink.click();
+    }
 
 
 }
