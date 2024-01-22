@@ -11,13 +11,15 @@ import java.nio.file.Files;
 
 public class BrowserUtils {
 
-    private static Actions actions = new Actions(Driver.getDriver());
+    private static Actions actions;
     public static void scrollDownWithPageDown(){
+        actions = new Actions(Driver.getDriver());
         actions.keyDown(Keys.PAGE_DOWN).release().build().perform();
         wait(1);
     }
 
     public static void scrollUpWithPageUp(){
+        actions = new Actions(Driver.getDriver());
         actions.keyDown(Keys.PAGE_UP).release().build().perform();
         wait(1);
     }
