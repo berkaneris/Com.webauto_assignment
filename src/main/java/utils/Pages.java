@@ -1,7 +1,9 @@
 package utils;
 
+import checkboxRadio.ProductSelector_Page;
 import pages.Menu.Icons_Page;
 import pages.Spinner.SpinnerOverflow_Page;
+import pages.accordion.CollapseContent_Page;
 import pages.autocomplete.AccentFolding_Page;
 import pages.HomePage;
 import pages.WebAutomationPage;
@@ -24,18 +26,20 @@ import pages.resizable.Textarea_Page;
 import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Serialize_Page;
 import pages.slider.SnapToIncrements_Page;
+import pages.sortable.DisplayAsGrid_Page;
 
 public class Pages {
     private AccentFolding_Page accentFoldingPage;
     private Accept_Page acceptPage;
+
     private AlertTypes_Page alertTypesPage;
 
     private Animate_Page animatePage;
 
     private AutoScrolling_Page autoScrollingPage;
-
+    private CollapseContent_Page collapseContentPage;
     private ConstrainMovement_Page constrainMovementPage;
-
+    private DisplayAsGrid_Page displayAsGridPage;
     private DisplayMultipleMonths_Page displayMultipleMonthsPage;
 
     private DownloadDialog_Page downloadDialogPage;
@@ -55,6 +59,8 @@ public class Pages {
     private NestedIframe_Page nestedIframePage;
     private NormalIframe_Page normalIframePage;
 
+    private ProductSelector_Page productSelectorPage;
+
     private Resizable_DefFunc_Page resizableDefFuncPage;
 
     private RevertDraggablePosition_Page revertDraggablePositionPage;
@@ -72,6 +78,7 @@ public class Pages {
     private Toolbar_Page toolbarPage;
 
     private WebAutomationPage webAutomationPage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -101,6 +108,9 @@ public class Pages {
         modalFormPage = new ModalForm_Page();
         snapToIncrementsPage = new SnapToIncrements_Page();
         spinnerOverflowPage = new SpinnerOverflow_Page();
+        displayAsGridPage = new DisplayAsGrid_Page();
+        collapseContentPage = new CollapseContent_Page();
+        productSelectorPage = new ProductSelector_Page();
     }
 
     public HomePage getHomePage() {
@@ -197,6 +207,17 @@ public class Pages {
     }
     public SpinnerOverflow_Page getSpinnerOverflowPage(){
         return spinnerOverflowPage;
+    }
+    public DisplayAsGrid_Page getDisplayAsGridPage(){
+        return displayAsGridPage;
+    }
+
+    public CollapseContent_Page getCollapseContentPage(){
+        return collapseContentPage;
+    }
+
+    public ProductSelector_Page getProductSelectorPage(){
+        return productSelectorPage;
     }
 
 }
