@@ -114,7 +114,22 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Spinner Overflow")
     private WebElement spinnerOverflowLink;
 
+    @FindBy(linkText = "Sortable")
+    private WebElement sortableLink;
 
+    @FindBy(linkText = "Display as Grid")
+    private WebElement displayAsGridLink;
+    @FindBy(linkText = "Accordion")
+    private WebElement accordionLink;
+
+    @FindBy(linkText = "Collapse Content")
+    private WebElement collapseContentLink;
+
+    @FindBy(linkText = "Checkbox Radio")
+    private WebElement checkBoxRadioLink;
+
+    @FindBy(linkText = "Product Selector")
+    private WebElement productSelectorLink;
 
     public void clickOnDraggableLink() {
         draggableLink.click();
@@ -252,6 +267,25 @@ public class WebAutomationPage extends BasePage {
     public void clickOnSpinnerOverFlowLink(){
         spinnerOverflowLink.click();
     }
+    public void clickOnSortableLink(){
+        sortableLink.click();
+    }
+    public void clickOnDisplayAsGridLink(){
+        displayAsGridLink.click();
+    }
 
+    public void clickOnAccordionLink(){
+        accordionLink.click();
+    }
+    public void clickOnCollapseContentLink(){
+        collapseContentLink.click();
+    }
+
+    public void clickOnCheckboxRadioLink(){
+        checkBoxRadioLink.click();
+    }
+    public void clickOnProductSelectorLink(){
+        productSelectorLink.click();
+    }
 
 }
